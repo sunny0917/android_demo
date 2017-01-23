@@ -1,0 +1,334 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <CheckBox
+                android:id="@+id/code39_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/code39_checkBox"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/code39_checkBox"
+                android:gravity="center_vertical"
+                android:text="@string/code_39"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/code39_Edit"
+                android:background="@null"
+                android:paddingRight="-35dp"
+                android:src="@drawable/doubleline" />
+
+            <ImageButton
+                android:id="@+id/code39_Edit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:onClick="doClick"
+                android:src="@drawable/pencil" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <CheckBox
+                android:id="@+id/code128_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/code128_checkBox"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/code128_checkBox"
+                android:gravity="center_vertical"
+                android:text="@string/code_128"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/code128_Edit"
+                android:background="@null"
+                android:paddingRight="-35dp"
+                android:src="@drawable/doubleline" />
+
+            <ImageButton
+                android:id="@+id/code128_Edit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:onClick="doClick"
+                android:src="@drawable/pencil" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <CheckBox
+                android:id="@+id/interleaved_2of5_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/interleaved_2of5_checkBox"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/interleaved_2of5_checkBox"
+                android:gravity="center_vertical"
+                android:text="@string/interleaved_2of5"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/interleaved_2of5_Edit"
+                android:background="@null"
+                android:paddingRight="-35dp"
+                android:src="@drawable/doubleline" />
+
+            <ImageButton
+                android:id="@+id/interleaved_2of5_Edit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:onClick="doClick"
+                android:src="@drawable/pencil" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <CheckBox
+                android:id="@+id/gs1_128_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/gs1_128_checkBox"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/gs1_128_checkBox"
+                android:gravity="center_vertical"
+                android:text="@string/gsi_128"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/gs1_128_Edit"
+                android:background="@null"
+                android:paddingRight="-35dp"
+                android:src="@drawable/doubleline" />
+
+            <ImageButton
+                android:id="@+id/gs1_128_Edit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:onClick="doClick"
+                android:src="@drawable/pencil" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <CheckBox
+                android:id="@+id/ean_13_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/ean_13_checkBox"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/ean_13_checkBox"
+                android:gravity="center_vertical"
+                android:text="@string/ean_13"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/ean_13_Edit"
+                android:background="@null"
+                android:paddingRight="-35dp"
+                android:src="@drawable/doubleline" />
+
+            <ImageButton
+                android:id="@+id/ean_13_Edit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:onClick="doClick"
+                android:src="@drawable/pencil" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <CheckBox
+                android:id="@+id/qr_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/qr_checkBox"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/qr_checkBox"
+                android:gravity="center_vertical"
+                android:text="@string/qrc_ode"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/qr_Edit"
+                android:background="@null"
+                android:paddingRight="-35dp"
+                android:src="@drawable/doubleline" />
+
+            <ImageButton
+                android:id="@+id/qr_Edit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:onClick="doClick"
+                android:src="@drawable/pencil" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <CheckBox
+                android:id="@+id/pdf_417_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/pdf_417_checkBox"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/pdf_417_checkBox"
+                android:gravity="center_vertical"
+                android:text="@string/pdf_417"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/pdf_417_Edit"
+                android:background="@null"
+                android:paddingRight="-35dp"
+                android:src="@drawable/doubleline" />
+
+            <ImageButton
+                android:id="@+id/pdf_417_Edit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:onClick="doClick"
+                android:src="@drawable/pencil" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="50dp"
+                android:paddingTop="30dp"
+                android:text="Scan Result:"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

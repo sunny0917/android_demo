@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.scanmanager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.scanmanager.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.scanmanager.Code39Setting"
+            android:label="@string/title_activity_code39_setting" >
+        </activity>
+        <activity
+            android:name="com.example.scanmanager.Code128Setting"
+            android:label="@string/title_activity_code128_setting" >
+        </activity>
+        <activity
+            android:name="com.example.scanmanager.Interleaved2af5Setting"
+            android:label="@string/title_activity_interleaved2af5_setting" >
+        </activity>
+        <activity
+            android:name="com.example.scanmanager.Gsi128Setting"
+            android:label="@string/title_activity_gsi128_setting" >
+        </activity>
+        <activity
+            android:name="com.example.scanmanager.EAN13Setting"
+            android:label="@string/title_activity_ean13_setting" >
+        </activity>
+        <activity
+            android:name="com.example.scanmanager.QRCodeSetting"
+            android:label="@string/title_activity_qrcode_setting" >
+        </activity>
+        <activity
+            android:name="com.example.scanmanager.PDF417Setting"
+            android:label="@string/title_activity_pdf417_setting" >
+        </activity>
+        <activity
+            android:name="com.example.scanmanager.SettingsActivity"
+            android:label="@string/scan_para_setting" >
+        </activity>
+    </application>
+
+</manifest>

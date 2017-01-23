@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.example.scanmanager.Code39Setting" >
+
+    <TextView
+        android:id="@+id/tv_scan_receive_models"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/scan_receive_models"
+        android:textColor="#0d9678"
+        android:textSize="19dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_scan_receive_models"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_scan_receive_models"
+        android:checkedButton="0"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/rg_scan_receive_models_fast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:text="@string/receive_model_fast" />
+
+        <RadioButton
+            android:id="@+id/rg_scan_receive_models_slow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rg_scan_receive_models_fast"
+            android:layout_below="@+id/rg_scan_receive_models_fast"
+            android:text="@string/newline" 
+            android:layout_marginTop="5dp"/>
+
+        <RadioButton
+            android:id="@+id/rg_scan_receive_models_broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rg_scan_receive_models_slow"
+            android:layout_below="@+id/rg_scan_receive_models_slow"
+            android:text="@string/receive_model_broadcast"
+            android:layout_marginTop="5dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_scan_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_scan_receive_models"
+        android:layout_marginTop="20dp"
+        android:text="@string/scan_separator"
+        android:textColor="#0d9678"
+        android:textSize="19dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_scan_separator_models"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_scan_separator"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/rg_scan_separator_no_newline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:text="@string/separator_no_newline" />
+
+        <RadioButton
+            android:id="@+id/rg_scan_separator_newline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rg_scan_separator_no_newline"
+            android:layout_below="@+id/rg_scan_separator_no_newline"
+            android:text="@string/separator_newline" 
+            android:layout_marginTop="5dp"/>
+
+        <RadioButton
+            android:id="@+id/rg_scan_separator_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rg_scan_separator_newline"
+            android:layout_below="@+id/rg_scan_separator_newline"
+            android:text="@string/separator_space"
+            android:layout_marginTop="5dp" />
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Scan services</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="code_39">Code-39</string>
+    <string name="code_128">Code-128</string>
+    <string name="interleaved_2of5">Interleaved_2of5</string>
+    <string name="gsi_128">GS1-128</string>
+    <string name="ean_13">EAN-13</string>
+    <string name="app_desc">\t\tThis app\'s function is that enable or disable some bar code type for Honyware N431X</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_activity_navigatioin">Navigatioin</string>
+    <string name="tip_navigation">Please select the encoding type of Item that you want to edit</string>
+    <string name="title_activity_code39_setting">Code39Setting</string>
+    <string name="code_39_title1">Check character options</string>
+    <string name="scan_receive_models">Scan Receive Model</string>
+    <string name="code_39_title2">Mesasge Length</string>
+    <string name="code_39_title3">Prefix/Suffix</string>
+    <string name="code_39_title1_1">No Check Character</string>
+    <string name="code_39_title1_2">Validate ,but Don \' t Transmit</string>
+    <string name="code_39_title1_3">Validate and Tansmit</string>
+    <string name="Minimum">Minimum</string>
+    <string name="Maximum">Maximum</string>
+    <string name="Prefix">Prefix</string>
+    <string name="Suffix">Suffix</string>
+    <string name="qrc_ode">QR CODE</string>
+    <string name="pdf_417">PDF-417</string>
+    <string name="title_activity_code128_setting">Code128Setting</string>
+    <string name="title_activity_interleaved2af5_setting">Interleaved2af5Setting</string>
+    <string name="title_activity_gsi128_setting">Gsi128Setting</string>
+    <string name="title_activity_ean13_setting">EAN13Setting</string>
+    <string name="title_activity_qrcode_setting">QRCodeSetting</string>
+    <string name="title_activity_pdf417_setting">PDF417Setting</string>
+    <string name="ConvertUPC">Convert UPC-A to EAN-13</string>
+    <string name="macro_pdf">Macro PDF</string>
+    <string name="micro_pdf">Micro PDF</string>
+    <string name="receive_model_fast">Fast</string>
+    <string name="newline">Slow</string>
+    <string name="receive_model_broadcast">Broadcast</string>
+    <string name="scan_separator">Scan Separator</string>
+    <string name="separator_no_newline">No NewLine</string>
+    <string name="separator_newline">NewLine</string>
+    <string name="separator_space">Space</string>
+    <string name="scan_para_setting">Scan Setting</string>
+    
+
+</resources>
